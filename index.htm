@@ -13,57 +13,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="navbar-top" class="navbar navbar-expand-smfixed-top">
-        <div class="container">
-            <div class="menu">
-                <button type="button" class="btn btn-secondary">Home</button>
+    <header class="container-fluid p-0">
+        <nav id="navbar-top" class="navbar fixed-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <div class="menu">
+                    <button type="button" class="btn btn-secondary">Home</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Produk Kami Yang Lain
+                        </button>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" style="color: black;" href="#">Keripik Kentang</a></li>
+                        <li><a class="dropdown-item" style="color: black;" href="#">Buah"an Kering</a></li>
+                        <li><a class="dropdown-item" style="color: black;" href="#">Kue Basah & Kering</a></li>
+                        </ul>
+                    </div>
+                    <!-- Example single danger button -->
                 <div class="btn-group">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Produk Kami Yang Lain
+                    Berita
                     </button>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" style="color: black;" href="#">Keripik Kentang</a></li>
-                    <li><a class="dropdown-item" style="color: black;" href="#">Buah"an Kering</a></li>
-                    <li><a class="dropdown-item" style="color: black;" href="#">Kue Basah & Kering</a></li>
+                    <li><a class="dropdown-item" style="color: black;" href="#">Koran</a></li>
+                    <li><a class="dropdown-item" style="color: black;" href="#">Majalah</a></li>
+                    <li><a class="dropdown-item" style="color: black;" href="#">Artikel</a></li>
                     </ul>
                 </div>
-                <!-- Example single danger button -->
-            <div class="btn-group">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Berita
-                </button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" style="color: black;" href="#">Koran</a></li>
-                <li><a class="dropdown-item" style="color: black;" href="#">Majalah</a></li>
-                <li><a class="dropdown-item" style="color: black;" href="#">Artikel</a></li>
-                </ul>
+                <button type="button" class="btn btn-secondary">Tentang Kami</button>
+                </div>
+                <form class="search-box">
+                    <input type="text" placeholder="Cari Produk Kami">
+                    <button type="submit">Cari</button>
+                </form>
             </div>
-            <button type="button" class="btn btn-secondary">Tentang Kami</button>
-            </div>
-            <form class="search-box">
-                <input type="text" placeholder="Cari Produk Kami">
-                <button type="submit">Cari</button>
-            </form>
-        </div>
-    </nav>
-
-    <section class="first-section">
-        <div class="container">
-            <div class="content">
+        </nav>
+    </header>
+    <section class="container-fluid" style="margin-top: 67.6px;">
+        <div class="container-fluid row bg-secondary text-black py-5">
+            <div class="container-fluid">
                 <h1>Kripik Si Engkong</h1>
                 <p>Perusahaan Keripik Singkong adalah produsen makanan ringan yang berfokus pada produksi keripik singkong yang lezat dan berkualitas tinggi. Dengan komitmen untuk menyajikan produk yang sehat, lezat, dan inovatif. Perusahaan Keripik Singkong menggunakan bahan baku singkong berkualitas terbaik yang dipilih secara selektif.</p>
                 <img src="images/kripik singkong.jpg" alt="gambar kripik" width="300px" data-aos="zoom-in">
                 <div class="floating" style=
                     "height: 150px; width: 150px;
                     padding: 10px">
-                    <button type="button" class="btn btn-secondary">Beli Sekarang!</button>
+                    <button type="button" class="btn btn-dark">Beli Sekarang!</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="second-section">
-        <div class="container">
+    <section class="container-fluid" style="margin-top: 67.6px;">
+        <div class="container-fluid">
             <div class="content">
                 <h2>Produk" kami</h2>
                 <p>Berikut adalah produk produk kami</p>
@@ -79,7 +80,12 @@
                 <div class="floating" style=
                     "height: 150px; width: 150px;
                     padding: 10px">
-                    <button type="button" class="btn btn-secondary">Beli yang Balado</button>
+                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Pedas nya khas sambal balado!">
+                        Beli yang Balado
+                    </button>
+                    <div class="my-4">
+                        <div class="badge bg-danger">Best Seller!</div>
+                    </div>
                 </div>
             </div>
             <div class="content">
@@ -93,11 +99,12 @@
         </div>
     </section>
 
-    <section class="third-section">
-        <div class="container">
+    <section class="container-fluid" style="margin-top: 67.6px;">
+        <div class="container-fluid container-fluid row bg-dark text-white py-5">
             <div class="content">
                 <h2>Cabang-cabang Kami</h2>
-                <p>Kami sudah buka dengan total 3 cabang. Bisa di cek dibawah ini.</p>
+                <p>Kami sudah buka dengan total 3 cabang. Berikut dengan link google maps dari ketiga cabang.</p>
+                <a><button type="button" class="btn btn-secondary" href="https://maps.app.goo.gl/LGYdoY5zVSAXsgNn9">Lokasi dari ketiga cabang</button></a>
                 <div class="accordion accordion-flush" id="accordionFlushExample"></div>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -108,7 +115,7 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                            <strong>Cabang Pertama.</strong>Cabang pertama yang kami buka ada di depok. Lebih tepatnya di Jl. Kartini no.3 bisa anda cek di google maps. https://maps.app.goo.gl/LGYdoY5zVSAXsgNn9
+                            <strong>Cabang Pertama.</strong>Cabang pertama yang kami buka ada di depok. Lebih tepatnya di Jl. Kartini no.3 bisa anda cek di google maps yang tertera di atas. jika tombol tidak berfungsi, gunakan link ini : https://maps.app.goo.gl/LGYdoY5zVSAXsgNn9
                             </div>
                             <img src="images/toko depok.jpg" alt="cabang depok" width="500px">
                         </div>
@@ -125,7 +132,7 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                            <strong>Cabang Kedua.</strong>Cabang pertama yang kami buka ada di Cibinong. Lebih tepatnya di Jl. raya Mayor Oking no.39 bisa anda cek di google maps. https://maps.app.goo.gl/LGYdoY5zVSAXsgNn9
+                            <strong>Cabang Kedua.</strong>Cabang pertama yang kami buka ada di Cibinong. Lebih tepatnya di Jl. raya Mayor Oking no.39 bisa anda cek di google maps yang tertera di atas. jika tombol tidak berfungsi, gunakan link ini : https://maps.app.goo.gl/LGYdoY5zVSAXsgNn9
                             </div>
                             <img src="images/toko cibinong.jpg" alt="cabang Cibinong" width="500px">
                         </div>
@@ -142,7 +149,7 @@
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                            <strong>Cabang Kedua.</strong>Cabang pertama yang kami buka ada di Bogor. Lebih tepatnya di Jl. raya Puncak no.86 bisa anda cek di google maps. https://maps.app.goo.gl/LGYdoY5zVSAXsgNn9
+                            <strong>Cabang Ketiga.</strong>Cabang pertama yang kami buka ada di Bogor. Lebih tepatnya di Jl. raya Puncak no.86 bisa anda cek di google maps yang tertera di atas. jika tombol tidak berfungsi, gunakan link ini : https://maps.app.goo.gl/LGYdoY5zVSAXsgNn9
                             </div>
                             <img src="images/toko puncak.jpg" alt="cabang Cibinong" width="500px">
                         </div>
@@ -154,7 +161,7 @@
     </section>
 
     <footer>
-        <div class="container">
+        <div class="container-fluid" style="margin-top: 67.6px;">
             <p>Hubungi kami untuk melakukan pemesanan, ataupun memberikan masukan. Masukan yang anda berikan akan sangat berarti bagi kami.</p>
             <p>Contact Us: <a href="mailto:contact@example.com">keripiksingkong@yahoo.com</a></p>
             <div class="social-icons">
@@ -169,6 +176,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
 </body>
 </html>
@@ -306,6 +315,13 @@ body {
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+    .sectioncontainer-fluid {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+    }
+}
 /* Accordion Styles */
 .accordion-btn {
     background-color: #555;
@@ -338,7 +354,7 @@ footer {
 
 .social-icons .icon img {
     width: 30px;
-    height: auto;
+    height: auto;
 }
 
 </style>
